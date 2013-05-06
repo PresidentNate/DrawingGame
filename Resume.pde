@@ -1,7 +1,7 @@
 /** Resume
  *  This is a program that prints out my resume
  *  in a fun and graphically pleasing way.
- *  Version 1.0
+ *  Version 1.1
  *  This is just the setup of the resume,
  *  I'll add more exciting stuff later,
  *  such as: animations, colors, different fonts/font sizes, etc.
@@ -80,8 +80,8 @@ void print_string() {
   //Everything else -aligned left
   textAlign(LEFT);
   int len = sent.length; //gets the lenngth of the array
-  for (int i=6; i < len ; i++) {
-    text(sent[i], 25, 0+i*20);
+  for (int i=6; i < len; i++) {
+    text(sent[i], 25, i*20);
   }
 }
 
